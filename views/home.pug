@@ -1,0 +1,48 @@
+extends base.pug
+
+block scripts 
+    script(src='/static/app.js')
+
+block style
+    style 
+        include ../static/style.css
+block content 
+        section#introsection 
+            div Welcome to Dance Academy
+            div.small Eat Sleep Dance Repeat
+
+        section#missionsection 
+            h2 Our Mission
+            div.container
+                div.card
+                    h3 Dance Perfecton
+                    div.cardbox
+                        div.cardimg
+                            img(src='/static/image/boy.png')
+                        div.cardcontent
+                            p This is best dance academy in India
+                div.card
+                    h3 Dance the way you like
+                    div.cardbox
+                        div.cardimg
+                            img(src='/static/image/breakdance.png')
+                        div.cardcontent
+                            p This is best dance academy in India
+                div.card
+                    h3 Expert guidance
+                    div.cardbox
+                        div.cardimg
+                            img(src='/static/image/carefree.png')
+                        div.cardcontent
+                            p This is best dance academy in India
+        section#sponsersection 
+            h2 Our Sponsors
+            div.sponsors
+                a(href="https:facebook.com")
+                    img(src="/static/image/facebook.png", alt="sponsor image")
+                a(href="https:instagram.com")
+                    img(src="/static/image/instagram.png", alt="sponsor image")
+                a(href="https:twitter.com")
+                    img(src="/static/image/twitter.png", alt="sponsor image")
+                a(href="https:whatsapp.com")
+                    img(src="/static/image/whatsapp.png", alt="sponsor image")

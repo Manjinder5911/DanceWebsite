@@ -1,0 +1,164 @@
+/* #import url('');  for font-family*/
+@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+#navbar{
+    
+    position: sticky;
+    top: 0;
+    padding: 16px 0px;
+    background-color: rgb(233 130 118);
+}
+#navbar ul{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+#logo{
+    display: flex;
+    color: white;
+    align-items: center;
+    margin: 0px 20px;
+    font-size: 1.4rem;
+    margin-right: 40px;
+}
+#logo img{
+    height: 52px;
+    width: 60px;
+    filter: invert(1);
+}
+#navbar li{
+    list-style: none;
+}
+#navbar li a{
+    text-decoration: none;
+    padding: 3px 15px;
+    font-size: 2rem;
+    color: white;
+}
+#navbar li a:hover{
+    color: rgb(207, 182, 149);
+}
+
+#introsection{
+    height: 540px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gideon Roman', cursive;  
+    padding-bottom: 40px;
+}
+#introsection::before{
+    content: "";
+    background: url('/static/dance.jpg') no-repeat center center/cover;
+    /* background-size: 100% 600px; */
+    position: absolute;
+    /* height: 642px; */
+    top: 80px;
+    left: 0px;
+    height: 600px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+#introsection div{
+    color:rgb(243, 237, 237);
+    font-size: 2.7rem;
+    padding: 5px;
+    
+}
+#introsection div.small{
+    font-size: 1.9rem;
+}
+
+#sponsersection{
+    height: 300px;
+    background-color: rgb(105 128 203);  
+    margin-bottom: 40px;
+     
+}
+#sponsersection h2{
+    text-align: center;
+    padding: 20px 0px ;
+    padding-top: 30px;
+    font-size: 2.4rem; 
+    
+}
+.sponsors{
+    display: flex;
+    height: 180px;
+    /* max-width: 1000px; */
+    /* margin: auto; */
+    justify-content: center;
+}
+.sponsors a img{
+    height: inherit;
+    width: 200px;
+}
+#missionsection{
+    /* height: 300px; */
+    background-color: white;   
+    margin-bottom: 19px;
+}
+#missionsection h2{
+    text-align: center;
+    padding: 20px 0px;
+    font-size: 2.4rem; 
+}
+.cardbox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.cardimg{
+    padding: 0px 14px;
+    height: 133px;
+    margin: 5px 10px;
+}
+.cardimg img{
+    height: inherit;
+    width: 120px;
+}
+.cardcontent{
+    padding: 10px;
+}
+.cardcontent p{
+    font-size: 1.2rem;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card{
+    /* display: inline-block; */
+    border: 2px solid black;
+    background-color: rgb(204, 226, 107);
+    border-radius: 10px;
+    width: 25%;
+    margin: 23px 22px;
+    height: 300px;
+}
+.card h3{
+    text-align: center;
+    margin:12px;
+    margin-top: 17px;
+    font-size: 1.4rem;
+}
+#footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background-color: rgb(65, 62, 62);
+    color: white;
+    font-size: 1.3rem;
+}

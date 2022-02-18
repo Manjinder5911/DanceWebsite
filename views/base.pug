@@ -1,0 +1,20 @@
+doctype html
+html 
+    head 
+        title Manjinder Dance Academy
+        block scripts 
+        block style
+    body 
+        nav#navbar
+            ul 
+                div#logo
+                    img(src="/static/image/ballerina.png")
+                    | MDA
+                li #[a(href="/") Home]
+                li #[a(href="/") About]
+                li #[a(href="/") Services]
+                li #[a(href="/contact") Contact us]
+        block content 
+        footer#footer 
+            | Copyright © 2022 ManjinderDanceAcademy.com 
+            p All rights reserved
